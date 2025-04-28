@@ -19,20 +19,22 @@ Here we have the terraform files for the VPGW and Site to Site VPN deployment.
 ```bash
 terraform init
 ```
-```bash
-terraform plan
-```
-
-Variables required for the terraform resource creation/deployment: -
-You can either provide these during execution or create a file <code>variables.auto.tfvars</code> and add the values there.
+Variables required for the terraform resource creation/deployment which will be passed in <code>variables.auto.tfvars</code>.
+You can edit the variables in <code>variables.auto.tfvars</code> file and add the values there.
+We can also add the access keys here, if required.
 ```bash
 vpc_id                    VPC ID of AWS site (e.g. vpc-0eb24075490d4c793)
 customer_gateway_ip       Your on-prem device public IP (e.g. 3.108.208.184)
 customer_gateway_bgp_asn  Change only if required else just enter
 vpn_static_routes         CIDR range for the on prem site. (e.g. 10.10.0.0/16)
+#You can add the access keys as well
 aws_region                Region for the deployment
 access_key                Access Key 
 secret_key                Secret Key
+```
+
+```bash
+terraform plan
 ```
 
 Once we confirm everything to be fine we can proceed with resource creation
