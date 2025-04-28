@@ -2,7 +2,7 @@
 resource "aws_vpn_gateway" "this" {
   amazon_side_asn = 64512
   tags = {
-    Name = "sahinur-vpn-gateway"
+    Name = "my-vpn-gateway"
   }
 }
 
@@ -19,7 +19,7 @@ resource "aws_customer_gateway" "this" {
   type       = "ipsec.1"
 
   tags = {
-    Name = "sahinur-customer-gateway"
+    Name = "my-customer-gateway"
   }
 }
 
@@ -31,7 +31,7 @@ resource "aws_vpn_connection" "this" {
   static_routes_only  = length(var.vpn_static_routes) > 0 ? true : false
 
   tags = {
-    Name = "sahinur-vpn-connection"
+    Name = "my-vpn-connection"
   }
 }
 
