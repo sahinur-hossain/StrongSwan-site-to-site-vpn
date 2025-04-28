@@ -1,5 +1,6 @@
 # StrongSwan-site-to-site-vpn
-This repo contains the Automated site to site vpn configuration (VPGW + StrongSwan)
+This repo contains the Automated site to site vpn configuration with (VPGW + StrongSwan).
+We assume Ubuntu OS for ONPREM for Customer gateway with StrongSwan.
 
 ```bash
 git clone https://github.com/sahinur-hossain/StrongSwan-site-to-site-vpn.git
