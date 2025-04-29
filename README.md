@@ -51,7 +51,7 @@ Once we have the server access. Copy this VPN configuration file and then also p
 
 Once we have the **VPN configuration file** & **StrongSwan.sh** bash script in place. We need to make the bash Script executable.
 ```bash
-chmod +x
+chmod +x StrongSwan.sh
 ./StrongSwan.sh
 ```
 **StrongSwan.sh** is an automated bash script which will configure all the things for us. It will require few of the inputs: -
